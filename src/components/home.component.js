@@ -7,7 +7,7 @@ class Home extends Component {
         return(
             <div>
                 <div>
-                    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+                    <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="userNavbar">
                         <div className="container">
                             <Link className="navbar-brand" >FURNITURE STORE</Link>
                             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -16,10 +16,10 @@ class Home extends Component {
                                         <Link className="nav-link" to={"/home"}>HOME</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to={'/cart'} >CART</Link>
+                                        <Link className="nav-link" to={'/cart'}>CART</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to={'/orders'} >MY ORDER</Link>
+                                        <Link className="nav-link" to={'/orders'}>MY ORDER</Link>
                                     </li>
                                     <li>
                                     <Link className="nav-link" id="logoutButton" >LOGOUT</Link>

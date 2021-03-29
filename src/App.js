@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Home from "./components/home.component";
+import Admin from './components/admin.component'
 function App() {
   return (
     <div className="App" >
@@ -12,6 +13,7 @@ function App() {
             <Route path="/login" component={Login} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={Home} />
+            <Route path="/addProduct" component={Admin}/>
           </Switch>
     </Router> 
     </div>
