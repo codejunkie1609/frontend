@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import '../login.css';
 export default class SignUp extends Component {
+
     render() {
         return (
-            <div>
+            <div class="auth-wrapper">
+                <div class="auth-inner">
                 <form>
                 <h3>Sign Up</h3>
                 <div className="form-group">
@@ -37,6 +40,7 @@ export default class SignUp extends Component {
                 <a href="/login" id="signinLink" >Already a member?Click here</a>
             </div>
             </form>
+            </div>
             </div>
         );
     }
