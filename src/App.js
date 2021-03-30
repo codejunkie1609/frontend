@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Home from "./components/home.component";
+import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
+    <Navbar />
     <Router>
           <Switch>
             <Route exact path='/' component={Login} />
