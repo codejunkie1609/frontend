@@ -3,10 +3,15 @@ import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Home from "./components/home.component";
+<<<<<<< HEAD
 import Admin from './components/admin.component'
+=======
+import Navbar from "./components/Navbar/Navbar";
+>>>>>>> 770fdbdf8ed1731891b4bc26fd4172cc8ed8a1bf
 function App() {
   return (
-    <div className="App" >
+    <div className="App">
+    <Navbar />
     <Router>
           <Switch>
             <Route exact path='/' component={Login} />
