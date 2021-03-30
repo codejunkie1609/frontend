@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../login.css';
+import Navbar from './userNavbar/Navbar';
 export default class SignUp extends Component {
 
     render() {
         return (
+            <div>
+            <Navbar/>
             <div class="auth-wrapper">
                 <div class="auth-inner">
                 <form>
@@ -40,6 +43,7 @@ export default class SignUp extends Component {
                 <a href="/login" id="signinLink" >Already a member?Click here</a>
             </div>
             </form>
+            </div>
             </div>
             </div>
         );

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { NavItem } from 'react-bootstrap';
 import {MenuItems} from './MenueItems';
 import './Navbar.css';
-import 'font-awesome/css/font-awesome.min.css';
+import 'C:/Users/sri charan/Desktop/REACT/hello-world/node_modules/font-awesome/css/font-awesome.min.css';
 import {Button} from "../Button";
 class Navbar extends Component
 {

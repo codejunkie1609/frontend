@@ -2,39 +2,14 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import '../home.css'
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
+import Navbar from './userNavbar/Navbar';
 class Home extends Component {
     
     render() {
         return(
             <div>
+                <Navbar/>
                 <div>
-<<<<<<< HEAD
-                    <nav className="navbar navbar-expand-lg navbar-light fixed-top" id="userNavbar">
-                        <div className="container">
-                            <Link className="navbar-brand" >FURNITURE STORE</Link>
-                            <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-                                <ul className="navbar-nav ml-auto">
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to={"/home"}>HOME</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to={'/cart'}>CART</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to={'/orders'}>MY ORDER</Link>
-                                    </li>
-                                    <li>
-                                    <Link className="nav-link" id="logoutButton" >LOGOUT</Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                <div>
-=======
->>>>>>> 770fdbdf8ed1731891b4bc26fd4172cc8ed8a1bf
                    <div id="auth-inner">
                     <h1>WELCOME HOME</h1>
                     </div>

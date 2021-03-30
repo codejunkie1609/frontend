@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Switch, Route,Link } from "react-router-dom";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Home from "./components/home.component";
-<<<<<<< HEAD
-import Admin from './components/admin.component'
-=======
-import Navbar from "./components/Navbar/Navbar";
->>>>>>> 770fdbdf8ed1731891b4bc26fd4172cc8ed8a1bf
+import Admin from './components/admin.component';
+import orderHistoryA from './components/adminOrderHistory/orderHistory';
+import orderHistoryU from './components/userOrderHistory/orderHistory';
+
 function App() {
   return (
     <div className="App">
-    <Navbar />
+    
+  
     <Router>
           <Switch>
             <Route exact path='/' component={Login} />
@@ -19,6 +19,8 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/home" component={Home} />
             <Route path="/addProduct" component={Admin}/>
+            <Route path="/admin/orders" component={orderHistoryA}/>
+            <Route path="/orders" component={orderHistoryU}/>
           </Switch>
     </Router> 
     </div>

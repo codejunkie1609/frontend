@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import axios from 'axios'
 import '../login.css'
+import Navbar from './userNavbar/Navbar';
 export default class Login extends Component {
     login()
     {
@@ -20,7 +21,10 @@ export default class Login extends Component {
     }
     render() {
         return (
+            <div>
+            <Navbar/>
             <div class="auth-wrapper" id="loginBox">
+                
                 <div  class="auth-inner">
                             <form onSubmit={()=>this.login()}>
                                 <h3>Sign In</h3>
@@ -45,6 +49,7 @@ export default class Login extends Component {
                                 <a href="/sign-up" id="signupLink" >New user? click here</a>
                         </div>
                 </div>
+            </div>
             </div>
         );
     }
