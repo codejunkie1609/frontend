@@ -1,17 +1,17 @@
 export const MenuItems = [
     {
         title:'Home',
-        url:'http://localhost:3002/home',
+        url:'http://localhost:3000/home',
         cName:'nav-links'
     },
     {
         title:'Cart',
-        url:'http://localhost:3002/cart',
+        url:'http://localhost:3000/cart',
         cName:'nav-links'
     },
     {
         title:'My Order',
-        url:'http://localhost:3002/orders',
+        url:'http://localhost:3000/orders',
         cName:'nav-links'
     },
     // {
@@ -21,7 +21,7 @@ export const MenuItems = [
     // },
     {
         title:'Log Out',
-        url:'https://localhost:3002/login',
+        url:'https://localhost:3000/login',
         cName:'nav-links'
     }
 ]

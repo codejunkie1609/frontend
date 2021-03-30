@@ -1,0 +1,32 @@
+#furnitureCart {
+  text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    height: 500px;
+    width:2000x;
+    margin:auto;
+    margin-top:5%;
+  }
+  
+  #furnitureCart td, #furnitureCart th {
+    border: 1px solid #ddd;
+    padding: 40px;
+    min-width: fit-content;
+    align-items: center;
+  }
+  
+  #furnitureCart tr{background-color: #f2f2f2;}
+  
+  #furnitureCart tr:hover {background-color: #ddd;}
+  
+  #furnitureCart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+  #delete{
+    margin-top: 35px;
+  }

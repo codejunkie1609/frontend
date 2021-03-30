@@ -39,15 +39,16 @@ renderTableHeader()
 }
     render() {
         return (
-            <div id="adminOrderBody">
+            <div >
                 <Navbar/>
+                <div id="adminOrderBody">
                 <table id='adminOrder'>
                     <tbody>
                         <tr>{this.renderTableHeader()}</tr>
                         {this.renderTableData()}
                     </tbody>
                 </table>
-
+                </div>
             </div>
         )
     }

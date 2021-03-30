@@ -1,0 +1,40 @@
+#adminDash {
+  
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    height: 500px;
+    width:1100x;
+    margin:auto;
+    margin-top:5%;
+  }
+  
+  #adminDash td, #adminDash th {
+    border: 1px solid #ddd;
+    padding: 40px;
+    min-width: fit-content;
+    align-items: center;
+   
+  }
+  
+  #adminDash tr{background-color: #f2f2f2;}
+  
+  #adminDash tr:hover {background-color: #ddd;}
+  
+  #adminDash th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .flex-gap{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  

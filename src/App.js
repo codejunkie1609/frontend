@@ -6,7 +6,8 @@ import Home from "./components/home.component";
 import Admin from './components/admin.component';
 import orderHistoryA from './components/adminOrderHistory/orderHistory';
 import orderHistoryU from './components/userOrderHistory/orderHistory';
-
+import userCart from './components/UserCart/userCart';
+import adminDashboard from './components/adminDashboard/adminDashboard';
 function App() {
   return (
     <div className="App">
@@ -21,6 +22,8 @@ function App() {
             <Route path="/addProduct" component={Admin}/>
             <Route path="/admin/orders" component={orderHistoryA}/>
             <Route path="/orders" component={orderHistoryU}/>
+            <Route path="/cart" component={userCart}/>
+            <Route path="/admin" component={adminDashboard}></Route>
           </Switch>
     </Router> 
     </div>

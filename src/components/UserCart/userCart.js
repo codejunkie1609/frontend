@@ -1,19 +1,17 @@
 import React, { Component } from 'react'
-import './orders.css'
-import Navbar from '../adminNavbar/Navbar'
+import './userCart.css'
+import Navbar from '../userNavbar/Navbar'
 
-class orderHistory extends Component {
+export class userCart extends Component {
     constructor(props)
     {
         super(props)
         this.state ={
             orders : [
-                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100},
-                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100},
-                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100},
-                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100}
-            
-                
+                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100, operation:''},
+                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100, operation:''},
+                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100, operation:''},
+                {ProductName : 1, Price : 10, Quantity : 20 , TotalPrice : 100, operation:''}
             ]
         }
     }
@@ -26,7 +24,8 @@ class orderHistory extends Component {
                 <td>{Price}</td>
                 <td>{Quantity}</td>
                 <td>{Price*Quantity}</td>
-               
+                <button id ="delete" class="btn btn-danger">delete</button>
+                
             </tr>
         )
     })
@@ -35,25 +34,28 @@ renderTableHeader()
 {
     let header = Object.keys(this.state.orders[0])
     return header.map((key,index)=>{
-        return <th key={index}>{key}</th>
+      
+        return (<th key={index}>{key}</th>)
+        
+
     })
 }
     render() {
         return (
-            <div  >
+            <div >
                 <Navbar/>
-                <div id="furnitureOrderBody">
-                <table id='furnitureOrder'>
+                <div id="furnitureCartBody">
+                <table id='furnitureCart'>
                     <tbody >
                         <tr>{this.renderTableHeader()}</tr>
                         {this.renderTableData()}
                     </tbody>
                 </table>
                 </div>
-                \
             </div>
         )
     }
+    
 }
 
-export default orderHistory
+export default userCart
