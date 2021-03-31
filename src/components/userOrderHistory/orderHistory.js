@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './orders.css'
-import Navbar from '../adminNavbar/Navbar'
+import Navbar from '../userNavbar/Navbar'
 
 class orderHistory extends Component {
     constructor(props)

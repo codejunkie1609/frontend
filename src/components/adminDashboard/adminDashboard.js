@@ -23,14 +23,11 @@ export class adminDashboard extends Component {
                 <td>{FurnitureName}</td>
                 <td>{Price}</td>
                 <td>{Quantity}</td>
-                <center>
                 <div class="flex-gap">
                     <button id ="delete" class="btn btn-danger">delete</button>
-                    <button id ="edit" class="btn btn-primary">edit</button>
+                    <button id ="edit" class="btn btn-primary ">edit</button>
                     
                 </div>
-                </center>
-               
             </tr>
         )
     })
@@ -50,13 +47,21 @@ renderTableHeader()
             <div >
                 <Navbar/>
                 <div id="adminDashboard">
-                <table id='adminDash'>
-                    <tbody >
-                        <tr>{this.renderTableHeader()}</tr>
-                        {this.renderTableData()}
-                    </tbody>
-                </table>
+                    <table id='adminDash'>
+                        <tbody >
+                            <tr>{this.renderTableHeader()}</tr>
+                            {this.renderTableData()}
+                        </tbody>
+                    </table>
                 </div>
+                <br></br>
+                <center>
+                    <div>
+                        <a href="/addProduct" >
+                            <button class="btn btn-primary">ADD PRODUCT</button>
+                        </a>
+                    </div>
+                </center>
             </div>
         )
     }

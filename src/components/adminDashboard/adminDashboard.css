@@ -13,8 +13,7 @@
   #adminDash td, #adminDash th {
     border: 1px solid #ddd;
     padding: 40px;
-    min-width: fit-content;
-    align-items: center;
+
    
   }
   
@@ -32,9 +31,16 @@
   .flex-gap{
     display: inline-flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20%;
-    margin-left: 5px;
-    margin-right: 5px;
+    gap: 9px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    margin-left: 7px;
+  }
+  #edit,#delete{
+    height:fit-content;
+    margin-top: 34.8px;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   

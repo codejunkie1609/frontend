@@ -45,13 +45,21 @@ renderTableHeader()
             <div >
                 <Navbar/>
                 <div id="furnitureCartBody">
-                <table id='furnitureCart'>
-                    <tbody >
-                        <tr>{this.renderTableHeader()}</tr>
-                        {this.renderTableData()}
-                    </tbody>
-                </table>
+                    <table id='furnitureCart'>
+                        <tbody >
+                            <tr>{this.renderTableHeader()}</tr>
+                            {this.renderTableData()}
+                        </tbody>
+                    </table>
                 </div>
+                <br></br>
+                <center>
+                    <div>
+                        <a href="/orders" >
+                            <button class="btn btn-primary">PLACE ORDER</button>
+                        </a>
+                    </div>
+                </center>
             </div>
         )
     }
